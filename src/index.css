@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --font-display: 'Cabinet Grotesk', 'Plus Jakarta Sans', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+  
+  body {
+    font-family: var(--font-sans);
+    background-color: #fafaf9;
+    color: #1c1917;
+  }
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Custom scrollbar styling for compact panes */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #d6d3d1;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a29e;
+}
+
+/* Subtle parallax drift animations for mountain silhouette layers */
+@keyframes parallaxDriftSlow {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-2.5%);
+  }
+}
+
+@keyframes parallaxDriftMedium {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(3%);
+  }
+}
+
+@keyframes parallaxDriftFore {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-4%);
+  }
+}
+
+.animate-parallax-slow {
+  animation: parallaxDriftSlow 32s ease-in-out infinite alternate;
+  will-change: transform;
+}
+
+.animate-parallax-medium {
+  animation: parallaxDriftMedium 24s ease-in-out infinite alternate;
+  will-change: transform;
+}
+
+.animate-parallax-fore {
+  animation: parallaxDriftFore 18s ease-in-out infinite alternate;
+  will-change: transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-parallax-slow,
+  .animate-parallax-medium,
+  .animate-parallax-fore {
+    animation: none !important;
+  }
+}

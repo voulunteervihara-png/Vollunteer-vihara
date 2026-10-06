@@ -1,0 +1,6 @@
+{
+  "name": "Volunteer Vihara",
+  "description": "Purpose-driven student travel & volunteering ecosystem. Travel with Purpose. Connect with People. Explore Safely.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
