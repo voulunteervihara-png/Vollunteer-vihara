@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Compass, ShieldCheck, HeartHandshake, Users, MapPin, Sparkles, Mountain } from 'lucide-react';
+import { ArrowRight, Compass, ShieldCheck, HeartHandshake, Users, MapPin, Sparkles } from 'lucide-react';
 import { HERO_IMAGE } from '../../data/mockData';
 
 interface HeroSectionProps {
@@ -137,12 +137,6 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
           {/* Left Column: Storytelling & CTAs */}
           <div className="lg:col-span-7 space-y-6 text-left">
-            {/* Mission Kicker with Mountain Accent */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-stone-900/90 backdrop-blur-md text-amber-300 text-xs font-semibold shadow-xs">
-              <Mountain className="w-3.5 h-3.5 text-amber-400" />
-              <span>Himalayan Eco-Trails, Cultural Havelis & Coastal Seva</span>
-            </div>
-
             {/* Headline */}
             <div className="space-y-2">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-neutral-900 font-display leading-[1.08] text-balance">

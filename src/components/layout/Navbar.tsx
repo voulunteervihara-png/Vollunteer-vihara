@@ -2,8 +2,6 @@ import React, { useState, useRef, useEffect } from 'react';
 import {
   Compass,
   Bell,
-  Menu,
-  X,
   Shield,
   Users,
   HeartHandshake,
@@ -573,15 +571,6 @@ export const Navbar: React.FC<NavbarProps> = ({
               </div>
             </div>
           )}
-
-          {/* Mobile hamburger button */}
-          <button
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden p-2 text-neutral-600 hover:text-neutral-900 rounded-lg cursor-pointer"
-            aria-label="Toggle navigation menu"
-          >
-            {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-          </button>
         </div>
       </div>
 

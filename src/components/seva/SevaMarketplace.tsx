@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { VolunteerOpportunity } from '../../types';
 import { OpportunityCard } from './OpportunityCard';
-import { Search, Filter, Sparkles, MapPin, Check, HeartHandshake } from 'lucide-react';
+import { Search, Filter, Sparkles, MapPin, Check } from 'lucide-react';
 
 interface SevaMarketplaceProps {
   opportunities: VolunteerOpportunity[];
@@ -50,10 +50,6 @@ export const SevaMarketplace: React.FC<SevaMarketplaceProps> = ({
     <div className="space-y-8 pb-12">
       {/* Header */}
       <div className="text-left space-y-2">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-100 text-teal-800 text-xs font-semibold">
-          <HeartHandshake className="w-3.5 h-3.5" />
-          <span>SEVA — Purpose-Driven Student Volunteering</span>
-        </div>
         <h2 className="text-3xl sm:text-4xl font-extrabold text-neutral-900 font-display tracking-tight text-balance">
           Discover Verified Volunteering Opportunities
         </h2>
